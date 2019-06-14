@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>СТЕГАНОГРАФИЧЕСКАЯ ПРОГРАММА, ИСПОЛЬЗУЮЩАЯ МЕТОД LSB ДЛЯ ИЗОБРАЖЕНИЙ В ФОРМАТЕ BMP: Исходный файл bmpFile.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">СТЕГАНОГРАФИЧЕСКАЯ ПРОГРАММА, ИСПОЛЬЗУЮЩАЯ МЕТОД LSB ДЛЯ ИЗОБРАЖЕНИЙ В ФОРМАТЕ BMP
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">bmpFile.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bmpFile_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classBmpFile.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBmpFile.html">BmpFile</a></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classBmpFile.html#a74c74bb4fbe13d87e5380c5a51ce1bd1">   19</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBmpFile.html#a74c74bb4fbe13d87e5380c5a51ce1bd1">bmpIdentifier</a>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">long</span> bmpFilesize;                                           </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> bmpres1,bmpres2;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">long</span> bmpPixoff;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">long</span> bmpiSize;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">long</span> bmpWidth;                                                  </div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">long</span> bmpHeight;                                                 </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> bmpPlanes;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> bmpBitsPixel;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">long</span> bmpCompression;                                            </div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">long</span> bmpImageSize;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">long</span> bmpXscale;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">long</span> bmpYScale;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">long</span> bmpColor;                                                  </div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">long</span> bmpImpCol;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">long</span> bmpTotalStuffablechar;                                     </div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classBmpFile.html#aed9f5a62b69ee09e62f75ff70317e027">BmpFile</a>(<span class="keywordtype">char</span> *filename);                                        </div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    ~<a class="code" href="classBmpFile.html">BmpFile</a>();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBmpFile.html#a4b19c02adb6237073491bd44e389d9f2">isFileExist</a>(<span class="keywordtype">char</span> *filename);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBmpFile.html#a917e862e4813dbef1a4e94fa67a83832">getDimension</a>(<span class="keywordtype">char</span> *filename, <span class="keywordtype">long</span> *width, <span class="keywordtype">long</span> *height);    </div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBmpFile.html#aea6e2670a066a2967837c54323d7eaf0">readHeader</a>(<span class="keywordtype">char</span> *filename);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBmpFile.html#a0ba2aa19f5b7d478a266bd0a162840b7">hide</a>(<span class="keywordtype">char</span> *bmpfile, <span class="keywordtype">char</span> *txtfile, <span class="keywordtype">char</span> *output);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBmpFile.html#adcc78879312808ffbe64dfadff699450">unhide</a>(<span class="keywordtype">char</span> *bmpfile,<span class="keywordtype">char</span> *txtfile);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBmpFile.html#abfcc28bca4d0113ad37ce2e1f2547a21">checkFilesForHiding</a>(<span class="keywordtype">char</span> *bmpfile, <span class="keywordtype">char</span> *txtfile);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBmpFile.html#acd76df84283673fd0bfc32b8edb8239b">printFileInfo</a>();</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classcipher__error.html">  102</a></span>&#160;<span class="keyword">class </span><a class="code" href="classcipher__error.html">cipher_error</a>: <span class="keyword">public</span> std::invalid_argument</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classcipher__error.html">cipher_error</a> (<span class="keyword">const</span> std::string&amp; what_arg):</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        std::invalid_argument(what_arg) {}</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classcipher__error.html">cipher_error</a> (<span class="keyword">const</span> <span class="keywordtype">char</span>* what_arg):</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        std::invalid_argument(what_arg) {}</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div><div class="ttc" id="classBmpFile_html_a4b19c02adb6237073491bd44e389d9f2"><div class="ttname"><a href="classBmpFile.html#a4b19c02adb6237073491bd44e389d9f2">BmpFile::isFileExist</a></div><div class="ttdeci">int isFileExist(char *filename)</div><div class="ttdoc">открытие файла с изображением. </div><div class="ttdef"><b>Definition:</b> bmpFile.cpp:11</div></div>
+<div class="ttc" id="classcipher__error_html"><div class="ttname"><a href="classcipher__error.html">cipher_error</a></div><div class="ttdef"><b>Definition:</b> bmpFile.h:102</div></div>
+<div class="ttc" id="classBmpFile_html_aed9f5a62b69ee09e62f75ff70317e027"><div class="ttname"><a href="classBmpFile.html#aed9f5a62b69ee09e62f75ff70317e027">BmpFile::BmpFile</a></div><div class="ttdeci">BmpFile(char *filename)</div><div class="ttdoc">конструктор для считывания файла </div><div class="ttdef"><b>Definition:</b> bmpFile.cpp:100</div></div>
+<div class="ttc" id="classBmpFile_html_acd76df84283673fd0bfc32b8edb8239b"><div class="ttname"><a href="classBmpFile.html#acd76df84283673fd0bfc32b8edb8239b">BmpFile::printFileInfo</a></div><div class="ttdeci">int printFileInfo()</div><div class="ttdoc">вывод информации о изображении </div><div class="ttdef"><b>Definition:</b> bmpFile.cpp:244</div></div>
+<div class="ttc" id="classBmpFile_html"><div class="ttname"><a href="classBmpFile.html">BmpFile</a></div><div class="ttdef"><b>Definition:</b> bmpFile.h:9</div></div>
+<div class="ttc" id="classBmpFile_html_abfcc28bca4d0113ad37ce2e1f2547a21"><div class="ttname"><a href="classBmpFile.html#abfcc28bca4d0113ad37ce2e1f2547a21">BmpFile::checkFilesForHiding</a></div><div class="ttdeci">int checkFilesForHiding(char *bmpfile, char *txtfile)</div><div class="ttdoc">Проверка файлов для сокрытия. </div><div class="ttdef"><b>Definition:</b> bmpFile.cpp:107</div></div>
+<div class="ttc" id="classBmpFile_html_a917e862e4813dbef1a4e94fa67a83832"><div class="ttname"><a href="classBmpFile.html#a917e862e4813dbef1a4e94fa67a83832">BmpFile::getDimension</a></div><div class="ttdeci">int getDimension(char *filename, long *width, long *height)</div><div class="ttdoc">получение высоты и ширины изображения. </div><div class="ttdef"><b>Definition:</b> bmpFile.cpp:88</div></div>
+<div class="ttc" id="classBmpFile_html_adcc78879312808ffbe64dfadff699450"><div class="ttname"><a href="classBmpFile.html#adcc78879312808ffbe64dfadff699450">BmpFile::unhide</a></div><div class="ttdeci">int unhide(char *bmpfile, char *txtfile)</div><div class="ttdoc">извлечение информации. </div><div class="ttdef"><b>Definition:</b> bmpFile.cpp:200</div></div>
+<div class="ttc" id="classBmpFile_html_a0ba2aa19f5b7d478a266bd0a162840b7"><div class="ttname"><a href="classBmpFile.html#a0ba2aa19f5b7d478a266bd0a162840b7">BmpFile::hide</a></div><div class="ttdeci">int hide(char *bmpfile, char *txtfile, char *output)</div><div class="ttdoc">сокрытие информации. </div><div class="ttdef"><b>Definition:</b> bmpFile.cpp:143</div></div>
+<div class="ttc" id="classBmpFile_html_aea6e2670a066a2967837c54323d7eaf0"><div class="ttname"><a href="classBmpFile.html#aea6e2670a066a2967837c54323d7eaf0">BmpFile::readHeader</a></div><div class="ttdeci">int readHeader(char *filename)</div><div class="ttdoc">чтение загаловка файла с изображением. </div><div class="ttdef"><b>Definition:</b> bmpFile.cpp:26</div></div>
+<div class="ttc" id="classBmpFile_html_a74c74bb4fbe13d87e5380c5a51ce1bd1"><div class="ttname"><a href="classBmpFile.html#a74c74bb4fbe13d87e5380c5a51ce1bd1">BmpFile::bmpIdentifier</a></div><div class="ttdeci">int bmpIdentifier</div><div class="ttdoc">Стеганография </div><div class="ttdef"><b>Definition:</b> bmpFile.h:19</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

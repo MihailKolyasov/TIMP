@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>СТЕГАНОГРАФИЧЕСКАЯ ПРОГРАММА, ИСПОЛЬЗУЮЩАЯ МЕТОД LSB ДЛЯ ИЗОБРАЖЕНИЙ В ФОРМАТЕ BMP: Класс BmpFile</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">СТЕГАНОГРАФИЧЕСКАЯ ПРОГРАММА, ИСПОЛЬЗУЮЩАЯ МЕТОД LSB ДЛЯ ИЗОБРАЖЕНИЙ В ФОРМАТЕ BMP
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="classBmpFile-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс BmpFile</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aed9f5a62b69ee09e62f75ff70317e027"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBmpFile.html#aed9f5a62b69ee09e62f75ff70317e027">BmpFile</a> (char *filename)</td></tr>
+<tr class="memdesc:aed9f5a62b69ee09e62f75ff70317e027"><td class="mdescLeft">&#160;</td><td class="mdescRight">конструктор для считывания файла  <a href="#aed9f5a62b69ee09e62f75ff70317e027">Подробнее...</a><br /></td></tr>
+<tr class="separator:aed9f5a62b69ee09e62f75ff70317e027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b19c02adb6237073491bd44e389d9f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBmpFile.html#a4b19c02adb6237073491bd44e389d9f2">isFileExist</a> (char *filename)</td></tr>
+<tr class="memdesc:a4b19c02adb6237073491bd44e389d9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">открытие файла с изображением.  <a href="#a4b19c02adb6237073491bd44e389d9f2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4b19c02adb6237073491bd44e389d9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917e862e4813dbef1a4e94fa67a83832"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBmpFile.html#a917e862e4813dbef1a4e94fa67a83832">getDimension</a> (char *filename, long *width, long *height)</td></tr>
+<tr class="memdesc:a917e862e4813dbef1a4e94fa67a83832"><td class="mdescLeft">&#160;</td><td class="mdescRight">получение высоты и ширины изображения.  <a href="#a917e862e4813dbef1a4e94fa67a83832">Подробнее...</a><br /></td></tr>
+<tr class="separator:a917e862e4813dbef1a4e94fa67a83832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6e2670a066a2967837c54323d7eaf0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBmpFile.html#aea6e2670a066a2967837c54323d7eaf0">readHeader</a> (char *filename)</td></tr>
+<tr class="memdesc:aea6e2670a066a2967837c54323d7eaf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">чтение загаловка файла с изображением.  <a href="#aea6e2670a066a2967837c54323d7eaf0">Подробнее...</a><br /></td></tr>
+<tr class="separator:aea6e2670a066a2967837c54323d7eaf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba2aa19f5b7d478a266bd0a162840b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBmpFile.html#a0ba2aa19f5b7d478a266bd0a162840b7">hide</a> (char *bmpfile, char *txtfile, char *output)</td></tr>
+<tr class="memdesc:a0ba2aa19f5b7d478a266bd0a162840b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">сокрытие информации.  <a href="#a0ba2aa19f5b7d478a266bd0a162840b7">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0ba2aa19f5b7d478a266bd0a162840b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc78879312808ffbe64dfadff699450"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBmpFile.html#adcc78879312808ffbe64dfadff699450">unhide</a> (char *bmpfile, char *txtfile)</td></tr>
+<tr class="memdesc:adcc78879312808ffbe64dfadff699450"><td class="mdescLeft">&#160;</td><td class="mdescRight">извлечение информации.  <a href="#adcc78879312808ffbe64dfadff699450">Подробнее...</a><br /></td></tr>
+<tr class="separator:adcc78879312808ffbe64dfadff699450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfcc28bca4d0113ad37ce2e1f2547a21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBmpFile.html#abfcc28bca4d0113ad37ce2e1f2547a21">checkFilesForHiding</a> (char *bmpfile, char *txtfile)</td></tr>
+<tr class="memdesc:abfcc28bca4d0113ad37ce2e1f2547a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка файлов для сокрытия.  <a href="#abfcc28bca4d0113ad37ce2e1f2547a21">Подробнее...</a><br /></td></tr>
+<tr class="separator:abfcc28bca4d0113ad37ce2e1f2547a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd76df84283673fd0bfc32b8edb8239b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBmpFile.html#acd76df84283673fd0bfc32b8edb8239b">printFileInfo</a> ()</td></tr>
+<tr class="memdesc:acd76df84283673fd0bfc32b8edb8239b"><td class="mdescLeft">&#160;</td><td class="mdescRight">вывод информации о изображении  <a href="#acd76df84283673fd0bfc32b8edb8239b">Подробнее...</a><br /></td></tr>
+<tr class="separator:acd76df84283673fd0bfc32b8edb8239b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a74c74bb4fbe13d87e5380c5a51ce1bd1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBmpFile.html#a74c74bb4fbe13d87e5380c5a51ce1bd1">bmpIdentifier</a></td></tr>
+<tr class="memdesc:a74c74bb4fbe13d87e5380c5a51ce1bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стеганография  <a href="#a74c74bb4fbe13d87e5380c5a51ce1bd1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a74c74bb4fbe13d87e5380c5a51ce1bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42dba4f718cb942205c3b0550e7e992f"><td class="memItemLeft" align="right" valign="top"><a id="a42dba4f718cb942205c3b0550e7e992f"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>bmpFilesize</b></td></tr>
+<tr class="separator:a42dba4f718cb942205c3b0550e7e992f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea570822938beb63dd2804c5ff9ff3ab"><td class="memItemLeft" align="right" valign="top"><a id="aea570822938beb63dd2804c5ff9ff3ab"></a>
+unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><b>bmpres1</b></td></tr>
+<tr class="separator:aea570822938beb63dd2804c5ff9ff3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b58b3475074d19a83e6072f371392d"><td class="memItemLeft" align="right" valign="top"><a id="a73b58b3475074d19a83e6072f371392d"></a>
+unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><b>bmpres2</b></td></tr>
+<tr class="separator:a73b58b3475074d19a83e6072f371392d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfeb8d372eb1f236f134ff87b6600ad"><td class="memItemLeft" align="right" valign="top"><a id="a7cfeb8d372eb1f236f134ff87b6600ad"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>bmpPixoff</b></td></tr>
+<tr class="separator:a7cfeb8d372eb1f236f134ff87b6600ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a91127964f183702055c14b329213be"><td class="memItemLeft" align="right" valign="top"><a id="a8a91127964f183702055c14b329213be"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>bmpiSize</b></td></tr>
+<tr class="separator:a8a91127964f183702055c14b329213be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd9f4b5be9b6aab6fa41ec8dcc643de"><td class="memItemLeft" align="right" valign="top"><a id="a0fd9f4b5be9b6aab6fa41ec8dcc643de"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>bmpWidth</b></td></tr>
+<tr class="separator:a0fd9f4b5be9b6aab6fa41ec8dcc643de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3049ef9d773c8f1b2fb2ad7edae40f4f"><td class="memItemLeft" align="right" valign="top"><a id="a3049ef9d773c8f1b2fb2ad7edae40f4f"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>bmpHeight</b></td></tr>
+<tr class="separator:a3049ef9d773c8f1b2fb2ad7edae40f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fffe85623bb795a26f88667cc47452"><td class="memItemLeft" align="right" valign="top"><a id="a06fffe85623bb795a26f88667cc47452"></a>
+unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><b>bmpPlanes</b></td></tr>
+<tr class="separator:a06fffe85623bb795a26f88667cc47452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e8f1725115e6b41577ae6dd65c82a1"><td class="memItemLeft" align="right" valign="top"><a id="a98e8f1725115e6b41577ae6dd65c82a1"></a>
+unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><b>bmpBitsPixel</b></td></tr>
+<tr class="separator:a98e8f1725115e6b41577ae6dd65c82a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e26fc5aa496f1d3e244d934a5d3bc6"><td class="memItemLeft" align="right" valign="top"><a id="a00e26fc5aa496f1d3e244d934a5d3bc6"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>bmpCompression</b></td></tr>
+<tr class="separator:a00e26fc5aa496f1d3e244d934a5d3bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b582e76207d2906a28e8ba29687f4a"><td class="memItemLeft" align="right" valign="top"><a id="aa1b582e76207d2906a28e8ba29687f4a"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>bmpImageSize</b></td></tr>
+<tr class="separator:aa1b582e76207d2906a28e8ba29687f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefcbdfc073a8dbdb2742f8d03ae8f7de"><td class="memItemLeft" align="right" valign="top"><a id="aefcbdfc073a8dbdb2742f8d03ae8f7de"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>bmpXscale</b></td></tr>
+<tr class="separator:aefcbdfc073a8dbdb2742f8d03ae8f7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a57a0ab219996baf7a4df37b0c2f857"><td class="memItemLeft" align="right" valign="top"><a id="a6a57a0ab219996baf7a4df37b0c2f857"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>bmpYScale</b></td></tr>
+<tr class="separator:a6a57a0ab219996baf7a4df37b0c2f857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460c34ddeb210b7785c62896ce2d06ea"><td class="memItemLeft" align="right" valign="top"><a id="a460c34ddeb210b7785c62896ce2d06ea"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>bmpColor</b></td></tr>
+<tr class="separator:a460c34ddeb210b7785c62896ce2d06ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc9ef75ec2ce08ec94feb37eaa4a19f1"><td class="memItemLeft" align="right" valign="top"><a id="afc9ef75ec2ce08ec94feb37eaa4a19f1"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>bmpImpCol</b></td></tr>
+<tr class="separator:afc9ef75ec2ce08ec94feb37eaa4a19f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b16f42aebee776362cc4079951e3ca8"><td class="memItemLeft" align="right" valign="top"><a id="a6b16f42aebee776362cc4079951e3ca8"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>bmpTotalStuffablechar</b></td></tr>
+<tr class="separator:a6b16f42aebee776362cc4079951e3ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aed9f5a62b69ee09e62f75ff70317e027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed9f5a62b69ee09e62f75ff70317e027">&#9670;&nbsp;</a></span>BmpFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BmpFile::BmpFile </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>конструктор для считывания файла </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>файл. Формат BMP </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classcipher__error.html">cipher_error</a>,если</td><td>неверный формат изображения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="abfcc28bca4d0113ad37ce2e1f2547a21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfcc28bca4d0113ad37ce2e1f2547a21">&#9670;&nbsp;</a></span>checkFilesForHiding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BmpFile::checkFilesForHiding </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>bmpfile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>txtfile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка файлов для сокрытия. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bmpfile</td><td>файл. Формат BMP </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">txtfile</td><td>файл. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>целочисленное значение. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classcipher__error.html">cipher_error</a>,если</td><td>неверный формат изображения. если не удалось открыть какой-то из файлов сообщение длинне возможного сокрытия. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a917e862e4813dbef1a4e94fa67a83832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a917e862e4813dbef1a4e94fa67a83832">&#9670;&nbsp;</a></span>getDimension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BmpFile::getDimension </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long *&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long *&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>получение высоты и ширины изображения. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>файл. Формат BMP </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>ширина. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>высота. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>целочисленное значение. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classcipher__error.html">cipher_error</a>,если</td><td>неверный формат изображения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0ba2aa19f5b7d478a266bd0a162840b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba2aa19f5b7d478a266bd0a162840b7">&#9670;&nbsp;</a></span>hide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BmpFile::hide </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>bmpfile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>txtfile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>сокрытие информации. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bmpfile</td><td>файл. Формат BMP </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">txtfile</td><td>файл. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">output</td><td>файл. Формат BMP </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>целочисленное значение. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classcipher__error.html">cipher_error</a>,если</td><td>неверный формат изображения. если не удалось открыть какой-то из файлов сообщение длинне возможного сокрытия. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4b19c02adb6237073491bd44e389d9f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b19c02adb6237073491bd44e389d9f2">&#9670;&nbsp;</a></span>isFileExist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BmpFile::isFileExist </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>открытие файла с изображением. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>файл. Формат BMP </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>целочисленное значение. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classcipher__error.html">cipher_error</a>,если</td><td>открыть не получилось. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acd76df84283673fd0bfc32b8edb8239b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd76df84283673fd0bfc32b8edb8239b">&#9670;&nbsp;</a></span>printFileInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BmpFile::printFileInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>вывод информации о изображении </p>
+<dl class="section return"><dt>Возвращает</dt><dd>целочисленное значение. </dd></dl>
+
+</div>
+</div>
+<a id="aea6e2670a066a2967837c54323d7eaf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea6e2670a066a2967837c54323d7eaf0">&#9670;&nbsp;</a></span>readHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BmpFile::readHeader </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>чтение загаловка файла с изображением. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>файл. Формат BMP </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>целочисленное значение. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classcipher__error.html">cipher_error</a>,если</td><td>неверный формат изображения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adcc78879312808ffbe64dfadff699450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcc78879312808ffbe64dfadff699450">&#9670;&nbsp;</a></span>unhide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BmpFile::unhide </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>bmpfile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>txtfile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>извлечение информации. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bmpfile</td><td>файл. Формат BMP </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">txtfile</td><td>файл. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>целочисленное значение. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classcipher__error.html">cipher_error</a>,если</td><td>неверный формат изображения. если не удалось открыть какой-то из файлов </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a74c74bb4fbe13d87e5380c5a51ce1bd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74c74bb4fbe13d87e5380c5a51ce1bd1">&#9670;&nbsp;</a></span>bmpIdentifier</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BmpFile::bmpIdentifier</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Стеганография </p>
+<p>Контейнер устанавливается в конструкторе. Для записи и извлечения преднзначены соответственно методы hide, unhide. </p><dl class="section warning"><dt>Предупреждения</dt><dd>Только для изображений формата BMP </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="bmpFile_8h_source.html">bmpFile.h</a></li>
+<li>bmpFile.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
